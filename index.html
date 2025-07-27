@@ -1,109 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.css">
-    <title>Document</title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="./main.css">
+ <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.css">
+ <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <!-- side nav -->
-        <section class="side-nav">
-            <div class="profile-img">
-                <img class="image" src="./image/Snaptik.app_74271014872741347929.jpg" alt="profile image">
-                <h3>EMMANUEL<br>BANIGO</h3>
-            </div>
+ <div class="container">
+  <!-- side nav -->
+  <section class="side-nav">
+  <div class="profile-img">
+   <img class="image" src="./image/Snaptik.app_74271014872741347929.jpg" alt="profile image">
+   <h3>EMMANUEL<br>BANIGO</h3>
+  </div>
 
-            <div class="menu">
-                <a href="http://www.google.com">
-                    <i class="fa fa-home"></i>All Tasks!
-                </a>
-                <a href="http://www.google.com">
-                    <i class="fa fa-list"></i>Important!
-                </a>
-                <a href="http://www.google.com">
-                    <i class="fa fa-check"></i>Completed!
-                </a>
-                <a href="http://www.google.com">
-                    <i class="fa fa-archive"></i>Do it Now!
-                </a>
-            </div>
+  <div class="menu">
+   <a href="#" onclick="filterTasks('all')">
+    <i class="fa fa-home"></i>All Tasks!
+   </a>
+   <a href="#" onclick="filterTasks('important')">
+    <i class="fa fa-list"></i>Important!
+   </a>
+   <a href="#" onclick="filterTasks('completed')">
+    <i class="fa fa-check"></i>Completed!
+   </a>
+   <a href="#" onclick="filterTasks('doitnow')">
+    <i class="fa fa-archive"></i>Do it Now!
+   </a>
+  </div>
 
-            <a href="http://www.google.com">
-                <i class="fa fa-sign-out"></i> Sign Out
-            </a>
-        </section>
+  <a href="#">
+   <i class="fa fa-sign-out"></i> Sign Out
+  </a>
+  </section>
 
-        <!-- main -->
-         <section class="todo-main">
-            <!-- todo header -->
-            <div class="top-bar">
-                <h3><span>All</span> Tasks</h3>
-                <a href="#">
-                    <i class="">O</i>
-                </a>
-            </div>
-
-            <!-- todo content -->
-             <div class="todo-desk">
-                <div class="todo-card">
-                    <h5>Update passwords</h5>
-                    <p>Reveiw online accounts and update passwords for better security. Use a password manager to keep track</p>
-                    <p class="sub">13/10/2023</p>
-                    <button class="Completed1">Completed</button>
-                    <i class="fa fa-pencil-in-square-o"></i>
-                        <i class="fa fa-trash"></i>
-                </div>
+  <!-- main -->
+  <section class="todo-main">
+  <div class="top-bar">
+   <h3><span>All</span> Tasks</h3>
    
-                <div class="todo-card">
-                    <h5>watch a video from fireship</h5>
-                            <p>Enrol that werid javascript course by fireship</p>
-                            <p class="sub">13/11/2023</p>
-                            <button class="Incompleted">Incompleted</button>
-                            <i class="fa fa-pencil-in-square-o"></i>
-                            <i class="fa fa-trash"></i>
-                </div>
+  </div>
 
-                <div class="todo-card">
-                   <h5>Weekly Reveiw</h3>
-                        <p>Dedicate 30 minutes every Friday to reveiw accomplishment. assess goals, and plan for thge next week</p>
-                        <p class="sub">27/10/2023</p>
-                        <button class="Completed3">Completed</button>
-                            <i class="fa fa-pencil-in-square-o"></i>
-                                <i class="fa fa-trash"></i>
-                                </div>
-
-                <div class="todo-card">
-                   <h5>Attend Yoga Class</h5>
-                    <p>join the local yoga studio's session this weekend to relax and improve flexibilty.</p>
-                    <p class="sub">27/10/2023</p>
-                    <button class="Incompleted4">Incompleted</button>
-                    <i class="fa fa-pencil-in-square-o"></i>
-                    <i class="fa fa-trash"></i>
-                </div>
-
-                <div class="todo-card">
-                    <h5>Dentist Appointment</h5>
-                    <p>Schedule a 6-month check-up with the dentist</p>
-                    <p class="sub">25/10/2023</p>
-                    <button class="Completed5">Completed</button>
-                    <i class="fa fa-pencil-in-square-o"></i>
-                    <i class="fa fa-trash"></i>
-                </div>
-
-                <div class="todo-card">
-                    <h5>Plant New Flowers</h5>
-                    <p>Buy a veriety of flowers seed or bulbs and plant them in the garden to brighten up the outdoors space</p>
-                    <p class="sub">13/10/2023</p>
-                    <button class="Incompleted6">Incompleted</button>
-                    <i class="fa fa-pencil-in-square-o"></i>
-                    <i class="fa fa-trash"></i>
-                </div>
-                </div>
-             </div>
-         </section>
+  <div id="container">
+    <div>
+      <textarea id="input"></textarea>
+      <button id="add-btn">Add</button>
+      <button id="clear-btn">Clear</button>
     </div>
+    <div id="todo-list"></div>
+   </div>
+  </section>
+ </div>
+ <script src="./main.js"></script>
 </body>
 </html>
